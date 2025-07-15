@@ -1,3 +1,3 @@
 module "vpc" {
-  source = "https://github.com/Kiranjatla/tf-module-vpc.git"
+  source = "github.com/Kiranjatla/tf-module-vpc"
 }
