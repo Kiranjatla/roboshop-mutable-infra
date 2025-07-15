@@ -1,5 +1,4 @@
 module "vpc" {
-  source = "github.com/Kiranjatla/tf-module-vpc?ref=${var.ver}"
+  source = "./vendor/modules/vpc"
+  vpc_cidr= var.vpc_cidr
 }
-
-variable "ver"{}
