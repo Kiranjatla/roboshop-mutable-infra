@@ -1,3 +1,4 @@
-tf-aws-vpc:
-source: "github.com/Kiranjatla/tf-module-vpc"
-version: "1.0.0"
+modules:
+  tf-aws-vpc:
+    source: "git::https://github.com/Kiranjatla/tf-module-vpc.git"
+    version: "1.0.0"
