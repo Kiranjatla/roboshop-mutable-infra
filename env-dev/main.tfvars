@@ -19,6 +19,10 @@ vpc = {
         name       = "app"
         attach_to  = "ngw"
       }
+      public = {
+        cidr_block = ["10.0.255.0/24"]
+        name      = "public"
+      }
     }
 #        public = {
 #          cidr_block = ["10.0.254.0/24"]
