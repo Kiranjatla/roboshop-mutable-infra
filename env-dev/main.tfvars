@@ -3,7 +3,7 @@ vpc = {
     cidr_block            = "10.0.0.0/16"
     additional_cidr_block = []
 #    additional_cidr_block = [10.1.0.0/16]  (if you want additional cidr just uncomment this)
-    subnets = {
+    private_subnets = {
       frontend = {
         cidr_block = ["10.0.0.0/24", "10.0.1.0/24"]
         name       = "frontend"
@@ -19,18 +19,14 @@ vpc = {
         name       = "app"
         attach_to  = "ngw"
       }
+    }
+    public_subnets = {
       public = {
-        cidr_block = ["10.0.255.0/24"]
+        cidr_block = ["10.0.255.0/24", "10.0.254.0/24"]
         name      = "public"
         attach_to = "igw"
       }
     }
-#        public = {
-#          cidr_block = ["10.0.254.0/24"]
-#          name      = "public"
-##          attach_to = "igw"
-#        }
-#      }
     subnet_availability_zones = ["us-east-1a", "us-east-1b"]
   }}
  management_vpc = {
