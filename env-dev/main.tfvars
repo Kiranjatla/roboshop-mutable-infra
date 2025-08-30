@@ -19,12 +19,12 @@ vpc = {
         name       = "app"
         attach_to  = "ngw"
       }
-        public = {
-          cidr_block = ["10.0.254.0/24"]
-          name      = "public"
-          attach_to = "igw"
-        }
-      }
+#        public = {
+#          cidr_block = ["10.0.254.0/24"]
+#          name      = "public"
+##          attach_to = "igw"
+#        }
+#      }
     subnet_availability_zones = ["us-east-1a", "us-east-1b"]
   }}
  management_vpc = {
