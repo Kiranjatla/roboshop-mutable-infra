@@ -5,11 +5,16 @@ module "vpc" {
   management_vpc = var.management_vpc
 }
 
+
 #module "docdb" {
 #  source = "./vendor/modules/docdb"
 #  env = var.env
 #  docdb = var.docdb
+# subnets = lookup(local.subnets, "app", null)
 #}
 
+output "private_subnets" {
+  value =  local.private_subnets
+}
 
 
