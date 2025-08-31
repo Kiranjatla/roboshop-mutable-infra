@@ -8,8 +8,8 @@ module "vpc" {
 
 module "docdb" {
   source = "./vendor/modules/docdb"
-  env = var.env
   docdb = var.docdb
+  env = var.env
  subnets = local.database_private_subnets[*].id
 }
 
