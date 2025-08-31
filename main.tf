@@ -14,6 +14,6 @@ module "vpc" {
 #}
 
 output "app_private_subnets" {
-  value = local.private_subnets[*].id
+  value = local.app_private_subnets[*].id
 }
 
