@@ -6,14 +6,15 @@ module "vpc" {
 }
 
 
-#module "docdb" {
-#  source = "./vendor/modules/docdb"
-#  env = var.env
-#  docdb = var.docdb
-# subnets = lookup(local.subnets, "app", null)
-#}
-
-output "private_subnets" {
-  value = local.app_private_subnets[*].id
+module "docdb" {
+  source = "./vendor/modules/docdb"
+  env = var.env
+  docdb = var.docdb
+ subnets = local.database_private_subnets[*].id
 }
+
+#this will displays you the output of private subnets
+#output "private_subnets" {
+#  value = local.app_private_subnets[*].id
+#}
 
