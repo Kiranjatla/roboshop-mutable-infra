@@ -5,11 +5,11 @@ module "vpc" {
   management_vpc = var.management_vpc
 }
 
-module "docdb" {
-  source = "./vendor/modules/docdb"
-  env = var.env
-  docdb = var.docdb
-}
+#module "docdb" {
+#  source = "./vendor/modules/docdb"
+#  env = var.env
+#  docdb = var.docdb
+#}
 
 
 
