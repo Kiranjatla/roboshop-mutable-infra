@@ -1,3 +1,5 @@
+env = "dev"
+
 vpc = {
   vpc1 = {
     cidr_block            = "10.0.0.0/16"
@@ -34,4 +36,11 @@ vpc = {
   route_table = "rtb-0a069e77621f9b019"
   vpc_cidr = "172.31.0.0/16"
 }
-env = "dev"
+
+docdb = {
+  db1 = {
+    engine = "docdb"
+
+  }
+}
+
