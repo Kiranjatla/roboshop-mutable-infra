@@ -17,6 +17,3 @@ output "private_subnets" {
   value = local.app_private_subnets[*].id
 }
 
-output "public_subnets" {
-  value = local.public_subnets[*].id
-}
