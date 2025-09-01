@@ -7,8 +7,9 @@ module "vpc" {
   public_subnets            = each.value.public_subnets
   subnet_availability_zones = each.value.subnet_availability_zones
   env                       = var.env
-#  management_vpc            = var.management_vpc
-#  private_zone_id           = var.private_zone_id
+  management_vpc            = var.management_vpc
+  #  private_zone_id           = var.private_zone_id
+
 }
 
 
