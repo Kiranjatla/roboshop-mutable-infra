@@ -19,6 +19,9 @@ module "vpc" {
 # subnets = local.database_private_subnets[*].id
 #}
 
+outpu"app_subnets" {
+value = [for i, j in module.private_subnets : j.route_tables.id]
+}
 
 
 
