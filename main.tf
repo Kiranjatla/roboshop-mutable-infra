@@ -9,7 +9,14 @@ module "vpc" {
   env                       = var.env
   management_vpc            = var.management_vpc
   #  private_zone_id           = var.private_zone_id
+}
 
+module "docdb" {
+  for_each = var.docdb
+  source = "./vendor/modules/docdb"
+  docdb = var.docdb
+  env = var.env
+ subnets = local.database_private_subnets[*].id
 }
 
 
