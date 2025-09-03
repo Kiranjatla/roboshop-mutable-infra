@@ -49,6 +49,27 @@ rds = {
     engine              = "aurora-mysql"
     engine_version      = "5.7.mysql_aurora.2.10.2"
     instance_class      = "db.t3.micro"
-    parameter_group_name = "default.mysql5.7"
+#    parameter_group_name = "default.mysql5.7"
     skip_final_snapshot = true
   }}
+#
+#elasticache = {
+#  ec1 = {
+#    engine          = "redis"
+#    engine_version  = "6.2"
+#    node_type       = "cache.t3.micro"
+#    num_cache_nodes = 1
+#  }
+#}
+
+#rabbitmq = {
+#  mq1 = {
+#    instance_type = "t3.micro"
+#  }
+#}
+
+#apps = {
+#  cart = {
+#    instance_type = "t3.micro"
+#  }
+#}
