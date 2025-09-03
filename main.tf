@@ -11,19 +11,19 @@ module "vpc" {
   #  private_zone_id           = var.private_zone_id
 }
 
-#module "docdb" {
-#  for_each = var.docdb
-#  source = "./vendor/modules/docdb"
-#  name = each.key
-#  engine = each.value.engine
-#  docdb = var.docdb
-#  env = var.env
-# subnets = flatten([for i, j in module.vpc : j.private_subnets["database"]["subnets"][*].id])
-#}
+module "docdb" {
+  for_each = var.docdb
+  source = "./vendor/modules/docdb"
+  name = each.key
+  engine = each.value.engine
+  docdb = var.docdb
+  env = var.env
+ subnets = flatten([for i, j in module.vpc : j.private_subnets["database"]["subnets"][*].id])
+}
 
-#output "app_subnets" {
-#value = flatten([for i, j in module.vpc : j.private_subnets["database"]["subnets"][*].id])
-#}
+output "app_subnets" {
+value = flatten([for i, j in module.vpc : j.private_subnets["database"]["subnets"][*].id])
+}
 
 module "rds" {
   source = "./vendor/modules/rds"
