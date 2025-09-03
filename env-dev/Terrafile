@@ -10,3 +10,6 @@ rds:
     source: "https://github.com/Kiranjatla/tf-module-rds"
     version: "main"
 
+elasticache:
+    source: "https://github.com/Kiranjatla/tf-module-elasticache"
+    version: "main"
