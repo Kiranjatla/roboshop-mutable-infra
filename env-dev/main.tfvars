@@ -75,3 +75,5 @@ apps = {
     min_size = 1
   }
 }
+
+BASTION_NODE    = "172.31.44.45"
