@@ -73,5 +73,6 @@ apps = {
     instance_type = "t3.micro"
     max_size = 1
     min_size = 1
+    name = each.key
   }
 }
