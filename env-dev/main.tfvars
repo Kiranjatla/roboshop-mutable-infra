@@ -75,6 +75,30 @@ apps = {
     min_size = 1
     app_port_no = 8080
   }
+  catalogue = {
+    instance_type = "t3.micro"
+    max_size = 1
+    min_size = 1
+    app_port_no = 8080
+  }
+  user = {
+    instance_type = "t3.micro"
+    max_size = 1
+    min_size = 1
+    app_port_no = 8080
+  }
+  shipping = {
+    instance_type = "t3.micro"
+    max_size = 1
+    min_size = 1
+    app_port_no = 8080
+  }
+  payment = {
+    instance_type = "t3.micro"
+    max_size = 1
+    min_size = 1
+    app_port_no = 8080
+  }
 }
 
 BASTION_NODE    = "172.31.44.45/32"
