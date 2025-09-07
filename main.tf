@@ -86,9 +86,9 @@ module "alb" {
   internal = each.value.internal
 }
 
-output "test" {
-  value = local.merged_alb
-}
+#output "test" {
+#  value = local.merged_alb
+#}
 
 
 
