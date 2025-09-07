@@ -99,8 +99,22 @@ apps = {
     min_size = 1
     app_port_no = 8080
   }
+  frontend = {
+    instance_type        = "t3.micro"
+    max_size             = 1
+    min_size             = 1
+    app_port_no          = 80
 }
 
 BASTION_NODE    = "172.31.44.45/32"
 private_zone_id = "Z08890812GDKJPFF6GWTN"
 #PROMETHEUS_NODE = "172.31./32" (prometheus server ip)
+
+  alb = {
+    public = {
+      internal = false
+    }
+    private = {
+      internal = true
+    }
+  }

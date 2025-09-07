@@ -22,3 +22,7 @@ app-setup:
     source: "https://github.com/Kiranjatla/tf-module-app-setup"
     version: "main"
 
+alb:
+        source: "https://github.com/Kiranjatla/tf-module-alb"
+        version: "main"
+
