@@ -68,6 +68,8 @@ module "apps" {
   instance_type = each.value.instance_type
   min_size      = each.value.min_size
   max_size      = each.value.max_size
+  lb_listener_priority = each.value.lb_listener_priority
+  type                 = each.value.type
   vpc_id        = element([for i, j in module.vpc : j.vpc_id], 0)
   BASTION_NODE = var.BASTION_NODE
   app_port_no = each.value.app_port_no
@@ -75,6 +77,7 @@ module "apps" {
   vpc_cidr = element([for i, j in module.vpc : j.vpc_cidr], 0)
   alb = module.alb
   private_zone_id      = var.private_zone_id
+
 }
 
 module "alb" {
