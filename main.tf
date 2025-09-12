@@ -75,8 +75,8 @@ module "apps" {
   app_port_no = each.value.app_port_no
 #  PROMETHEUS_NODE = var.PROMETHEUS_NODE
   vpc_cidr = element([for i, j in module.vpc : j.vpc_cidr], 0)
-#  alb = module.alb
-#  private_zone_id      = var.private_zone_id
+  alb = module.alb
+  private_zone_id      = var.private_zone_id
 #  public_dns_name      = try(each.value.public_dns_name, null)
 #  public_zone_id       = var.public_zone_id
 #  ACM_ARN = var.ACM_ARN
