@@ -74,48 +74,48 @@ apps = {
     max_size      = 1
     min_size      = 1
     app_port_no   = 8080
-#    lb_listener_priority = 100
-#    type                 = "backend"
+    lb_listener_priority = 100
+    type                 = "backend"
   }
   catalogue = {
     instance_type = "t3.micro"
     max_size      = 1
     min_size      = 1
     app_port_no   = 8080
-#    lb_listener_priority = 100
-#    type                 = "backend"
+    lb_listener_priority = 100
+    type                 = "backend"
   }
   user = {
     instance_type = "t3.micro"
     max_size      = 1
     min_size      = 1
     app_port_no   = 8080
-#    lb_listener_priority = 100
-#    type                 = "backend"
+    lb_listener_priority = 100
+    type                 = "backend"
   }
   shipping = {
     instance_type = "t3.micro"
     max_size      = 1
     min_size      = 1
     app_port_no   = 8080
-#    lb_listener_priority = 100
-#    type                 = "backend"
+    lb_listener_priority = 100
+    type                 = "backend"
   }
   payment = {
     instance_type = "t3.micro"
     max_size      = 1
     min_size      = 1
     app_port_no   = 8080
-#    lb_listener_priority = 100
-#    type                 = "backend"
+    lb_listener_priority = 100
+    type                 = "backend"
   }
   frontend = {
     instance_type = "t3.micro"
     max_size      = 1
     min_size      = 1
     app_port_no   = 80
-#    lb_listener_priority = 100
-#    type          = "frontend"
+    lb_listener_priority = 100
+    type          = "frontend"
 #    public_dns_name      = "dev"
   }
 }
