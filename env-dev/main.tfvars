@@ -115,8 +115,8 @@ apps = {
     min_size      = 1
     app_port_no   = 80
     lb_listener_priority = 100
-    type          = "frontend"
-    public_dns_name      = "dev"
+    type             = "frontend"
+    public_dns_name  = "dev"
   }
 }
 BASTION_NODE    = "172.31.44.45/32"
@@ -133,4 +133,4 @@ public_zone_id = "Z102158514HH6PL8QXJYQ"
     }
   }
 
-#ACM_ARN = "arn:aws:acm:us-east-1:037402781494:certificate/6078a0ef-dda1-4b97-8964-2296abf4c304"
+ACM_ARN = "arn:aws:acm:us-east-1:037402781494:certificate/6078a0ef-dda1-4b97-8964-2296abf4c304"
