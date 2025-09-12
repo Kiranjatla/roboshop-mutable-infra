@@ -9,4 +9,6 @@ variable "apps" {}
 variable "BASTION_NODE" {}
 variable "private_zone_id" {}
 #variable "PROMETHEUS_NODE" {}
-variable "alb" {}
+#variable "alb" {}
+#variable "public_zone_id" {}
+#variable "ACM_ARN" {}

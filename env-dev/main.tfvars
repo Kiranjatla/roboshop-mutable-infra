@@ -74,52 +74,54 @@ apps = {
     max_size      = 1
     min_size      = 1
     app_port_no   = 8080
-    lb_listener_priority = 100
-    type                 = "backend"
+#    lb_listener_priority = 100
+#    type                 = "backend"
   }
   catalogue = {
     instance_type = "t3.micro"
     max_size      = 1
     min_size      = 1
     app_port_no   = 8080
-    lb_listener_priority = 100
-    type                 = "backend"
+#    lb_listener_priority = 100
+#    type                 = "backend"
   }
   user = {
     instance_type = "t3.micro"
     max_size      = 1
     min_size      = 1
     app_port_no   = 8080
-    lb_listener_priority = 100
-    type                 = "backend"
+#    lb_listener_priority = 100
+#    type                 = "backend"
   }
   shipping = {
     instance_type = "t3.micro"
     max_size      = 1
     min_size      = 1
     app_port_no   = 8080
-    lb_listener_priority = 100
-    type                 = "backend"
+#    lb_listener_priority = 100
+#    type                 = "backend"
   }
   payment = {
     instance_type = "t3.micro"
     max_size      = 1
     min_size      = 1
     app_port_no   = 8080
-    lb_listener_priority = 100
-    type                 = "backend"
+#    lb_listener_priority = 100
+#    type                 = "backend"
   }
   frontend = {
     instance_type = "t3.micro"
     max_size      = 1
     min_size      = 1
     app_port_no   = 80
-    lb_listener_priority = 100
-    type          = "frontend"
+#    lb_listener_priority = 100
+#    type          = "frontend"
+#    public_dns_name      = "dev"
   }
 }
 BASTION_NODE    = "172.31.44.45/32"
 private_zone_id = "Z08890812GDKJPFF6GWTN"
+#public_zone_id = "Z102158514HH6PL8QXJYQ"
 #PROMETHEUS_NODE = "172.31./32" (prometheus server ip)
 
   alb = {
@@ -130,3 +132,5 @@ private_zone_id = "Z08890812GDKJPFF6GWTN"
       internal = true
     }
   }
+
+#ACM_ARN = "arn:aws:acm:us-east-1:037402781494:certificate/6078a0ef-dda1-4b97-8964-2296abf4c304"
