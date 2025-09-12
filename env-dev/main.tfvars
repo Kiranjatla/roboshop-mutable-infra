@@ -82,7 +82,7 @@ apps = {
     max_size      = 1
     min_size      = 1
     app_port_no   = 8080
-    lb_listener_priority = 100
+    lb_listener_priority = 101
     type                 = "backend"
   }
   user = {
@@ -90,7 +90,7 @@ apps = {
     max_size      = 1
     min_size      = 1
     app_port_no   = 8080
-    lb_listener_priority = 100
+    lb_listener_priority = 102
     type                 = "backend"
   }
   shipping = {
@@ -98,7 +98,7 @@ apps = {
     max_size      = 1
     min_size      = 1
     app_port_no   = 8080
-    lb_listener_priority = 100
+    lb_listener_priority = 103
     type                 = "backend"
   }
   payment = {
@@ -106,7 +106,7 @@ apps = {
     max_size      = 1
     min_size      = 1
     app_port_no   = 8080
-    lb_listener_priority = 100
+    lb_listener_priority = 104
     type                 = "backend"
   }
   frontend = {
