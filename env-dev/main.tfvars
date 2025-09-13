@@ -57,6 +57,11 @@ rds = {
     instance_class      = "db.t3.micro"
 #    parameter_group_name = "default.mysql5.7"
     skip_final_snapshot = true
+    nodes = {
+      one = {
+        instance_class = "db.t3.medium"
+      }
+    }
   }}
 
 elasticache = {
