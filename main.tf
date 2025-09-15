@@ -68,6 +68,10 @@ module "rabbitmq" {
   subnets         = flatten([for i, j in module.vpc : j.private_subnets["database"]["subnets"][*].id])
   name            = each.key
   instance_type   = each.value.instance_type
+  private_zone_id = var.private_zone_id
+  vpc_id              = element([for i, j in module.vpc : j.vpc_id], 0)
+  vpc_cidr            = element([for i, j in module.vpc : j.vpc_cidr], 0)
+  BASTION_NODE        = var.BASTION_NODE
 }
 
 module "apps" {
