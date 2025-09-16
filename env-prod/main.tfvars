@@ -75,13 +75,13 @@ elasticache = {
 
 rabbitmq = {
   mq1 = {
-    instance_type = "t3.micro"
+    instance_type = "t3.small"
   }
 }
 
 apps = {
   cart = {
-    instance_type = "t3.micro"
+    instance_type = "t3.small"
     max_size      = 5
     min_size      = 2
     app_port_no   = 8080
@@ -89,7 +89,7 @@ apps = {
     type                 = "backend"
   }
   catalogue = {
-    instance_type = "t3.micro"
+    instance_type = "t3.small"
     max_size      = 5
     min_size      = 2
     app_port_no   = 8080
@@ -97,7 +97,7 @@ apps = {
     type                 = "backend"
   }
   user = {
-    instance_type = "t3.micro"
+    instance_type = "t3.small"
     max_size      = 5
     min_size      = 2
     app_port_no   = 8080
@@ -105,7 +105,7 @@ apps = {
     type                 = "backend"
   }
   shipping = {
-    instance_type = "t3.micro"
+    instance_type = "t3.small"
     max_size      = 5
     min_size      = 2
     app_port_no   = 8080
@@ -113,7 +113,7 @@ apps = {
     type                 = "backend"
   }
   payment = {
-    instance_type = "t3.micro"
+    instance_type = "t3.small"
     max_size      = 5
     min_size      = 2
     app_port_no   = 8080
@@ -121,7 +121,7 @@ apps = {
     type                 = "backend"
   }
   frontend = {
-    instance_type = "t3.micro"
+    instance_type = "t3.small"
     max_size      = 5
     min_size      = 2
     app_port_no   = 80
