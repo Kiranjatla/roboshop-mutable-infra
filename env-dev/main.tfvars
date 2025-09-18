@@ -133,7 +133,8 @@ apps = {
 BASTION_NODE    = "172.31.44.45/32"
 private_zone_id = "Z08890812GDKJPFF6GWTN"
 public_zone_id = "Z102158514HH6PL8QXJYQ"
-#PROMETHEUS_NODE = "172.31./32" (prometheus server ip)
+PROMETHEUS_NODE = "172.31.29.131/32"
+#(prometheus server ip)
 
   alb = {
     public = {
