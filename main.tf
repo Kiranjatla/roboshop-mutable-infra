@@ -75,6 +75,7 @@ module "rabbitmq" {
 }
 
 module "apps" {
+  depends_on    = [module.vpc, module.rabbitmq, module.elasticache, module.docdb, module.alb, module.rds]
   source        = "./vendor/modules/app-setup"
   env           = var.env
   subnets       = each.key == "frontend" ? flatten([for i, j in module.vpc : j.private_subnets["frontend"]["subnets"][*].id]) : flatten([for i, j in module.vpc : j.private_subnets["app"]["subnets"][*].id])
