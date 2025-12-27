@@ -134,6 +134,7 @@ BASTION_NODE    = "172.31.44.45/32"
 private_zone_id = "Z08890812GDKJPFF6GWTN"
 public_zone_id = "Z102158514HH6PL8QXJYQ"
 PROMETHEUS_NODE = "172.31.29.131/32"
+#(Route53 Hosted Zone Id's)
 #(prometheus server ip)
 
   alb = {
